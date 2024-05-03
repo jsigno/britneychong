@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4">
       <div>
-        <img src={Logo} alt="Logo Image" style={{ width: "75px" }} />
+        <img src={Logo}  style={{ width: "75px" }} />
       </div>
 
       {/* menu */}
