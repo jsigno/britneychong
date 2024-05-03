@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4">
       <div>
-        <img src={Logo}  style={{ width: "75px" }} />
+        <img src={Logo} alt="Logo Image" style={{ width: "75px" }} />
       </div>
 
       {/* menu */}
@@ -24,6 +24,11 @@ const Navbar = () => {
         <li>
           <Link to="about" smooth={true} duration={500}>
             About
+          </Link>
+        </li>
+        <li>
+          <Link to="work" smooth={true} duration={500}>
+            Work
           </Link>
         </li>
         <li>
@@ -42,8 +47,8 @@ const Navbar = () => {
       <ul
         className={
           !nav
-            ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen flex flex-col justify-center items-center"
+            ? 'hidden'
+            : 'absolute top-0 left-0 w-full h-screen bg-white flex flex-col justify-center items-center'
         }
       >
         <li className="py-6 text-4xl">
@@ -55,6 +60,12 @@ const Navbar = () => {
           {" "}
           <Link onClick={handleClick} to="about" smooth={true} duration={500}>
             About
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          {" "}
+          <Link onClick={handleClick} to="work" smooth={true} duration={500}>
+            Work
           </Link>
         </li>
         <li className="py-6 text-4xl">
